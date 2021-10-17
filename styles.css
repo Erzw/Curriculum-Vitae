@@ -7,6 +7,30 @@ body {
     margin: 0;
 }
 
+.nombrecito{
+    text-align: center;
+}
+.container{
+    width: 600px;
+    margin: 100px auto;
+}
+
+img#imagen{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 1.6em;
+    text-align: justify;
+}
+
 .header {
     background: #004f92;
     color: white;
