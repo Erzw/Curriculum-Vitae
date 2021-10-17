@@ -1,0 +1,26 @@
+[
+    {
+        "habilidad" : "Html",
+        "estado" : 80
+    },
+
+   {
+        "habilidad" : "Css",
+        "estado" : 75
+    },
+
+    {
+        "habilidad" : "JavaScript",
+        "estado" : 60
+    },
+
+    {
+        "habilidad" : "Github",
+        "estado" : 85
+    },
+
+    {
+        "habilidad" : "React",
+        "estado" : 65
+    }
+]

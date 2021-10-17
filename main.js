@@ -76,3 +76,25 @@ function escribir(habilidad_arreglo)
     fetch('habilidades.json')
     .then(response => response.json())
     .then(info => escribir(info))
+
+/*Validar inputs*/ 
+function enviar() {
+  var formulario = document.getElementById("form");
+  var nombre = formulario[0];
+  var correo = formulario[1];
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (correo.value.match(validRegex)){
+   if (nombre.value != "") {
+    alert("Su solicitud ha sido enviada");
+    formulario.submit();
+    return true;
+  } else {
+    alert("Su solicitud falló, revise los datos detenidamente");
+    return false;}
+
+  } else {
+   alert("Su solicitud falló, revise los datos detenidamente");
+  }
+  
+}

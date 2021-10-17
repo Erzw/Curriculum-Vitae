@@ -48,7 +48,7 @@
                 <br><br>
             </article>
             
-        <article>
+            <article>
                 <br><br>
                 <h2 id="header3">Experiencias</h2>
                 <h3>Whatsapp web</h3>
@@ -76,11 +76,38 @@
                 <a href="https://www.instagram.com/?hl=es" target="_blank">Echa un vistazo</a>
             </article>
             <br><br><br>
-            </section>
+        </section>
 
         <section id="habilidades" class="habilidades"> </section>
         <div class="titulo"> <h2 id="header4">Habilidades</h2></div><br>
         <div class="row" id="lista_habilidades"></div><br>
+        
+        <br><br><br><br>
+        <h2 id="header5">Contacto</h2>
+        <form id="form" action="/formulario" method="POST" onsubmit="return enviar()">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="field" name="nombre" placeholder="Ezequiel Fernandez" ></input>
+            <br>
+            <label for="correo">Correo</label>
+            <input type="correo" id="correo" class="field" name="correo" placeholder="Correo@gmail.com" ></input>
+            <br>
+            <label for="comentario">Comentario</label>
+            <textarea cols="50" rows="10" id="comentario" class="field" placeholder="Ingrese Comentario" name="comentario" >Mucho gusto, me gustaría contactarte</textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="redes">
+            <ul class="sociales">
+                <li><a href="https://www.youtube.com/results?search_query=sistemas+de+informacion" target="_blank"><img src="img/img10.png" width="40" height="40"></a></li>
+                <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="img/img9.png" width="40" height="40"></a></li>
+                <li><a href="https://wa.me/584140178416" target="_blank"><img src="img/img8.png" width="40" height="40"></a></li>
+            </ul>
+        </div>
+
+        <footer class="footer" > 
+            <p> © 2021 Creado por Ezequiel Fernández</p>
+        </footer>
 
     </body>
 

@@ -82,7 +82,6 @@ p{
     background: #8d8d8d;
 }
 
-/*Carrusel*/
 .carrousel{
     margin-top: 60px;
     width: 100%;
@@ -121,7 +120,6 @@ p{
     padding: 8rem;
 }
 
-/*Skill*/
 .estado {
     margin: 0 200px;
     background: #333;
@@ -143,4 +141,75 @@ p{
     margin: 0 200px;
     display: flex;
     text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    background-color: #d1deeb;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.8em;
+    padding: 10px;
+    width: 500px;
+}
+
+input, textarea{
+    border: 0;
+    outline: none;
+}
+
+.field{
+    border: solid 2px #ccc;
+    padding: 10px;
+    width: 478px;
+}
+
+.field:focus{
+    border-color: #004f92;
+}
+
+button{
+    width: 5.5rem;
+    height: 3rem;
+}
+
+label{
+    color: #000;
+    font: bold;
+}
+
+.redes{
+    text-align: center;
+    padding: 0;
+    background-color: #c7c7c7;
+}
+
+.sociales{
+    text-align: center;
+    padding: 10px; 
+}
+
+.sociales li{
+    text-align: center;
+    display: inline-block;
+
+}
+
+.sociales a{
+    padding: 10px;
+}
+
+.footer {
+    margin-top: 4rem;
+    background: #004f92;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.footer p {
+    text-align: center;
+    font-size: medium;
+    padding: 1.5em 0;
+    margin: 0 auto;
 }
