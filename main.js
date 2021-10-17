@@ -35,3 +35,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fotos(contenedor);
 });
+
+/* Rellenar el esqueleto para las skills*/ 
+function escribir(habilidad_arreglo)
+{
+    const lista_habilidades = document.querySelector('#lista_habilidades');
+    
+    for(let i=0 ; i<habilidad_arreglo.length ; i++)
+
+    {
+        let item = document.createElement('div');
+        item.classList.add('item')
+
+        let item_text = document.createElement('div');
+        item_text.classList.add('texto-item');
+
+        let skill_name = document.createElement('span')
+        skill_name.innerText = habilidad_arreglo[i].habilidad;
+
+        let skill_progress = document.createElement('span');
+        skill_progress.innerText = `${habilidad_arreglo[i].estado}%`;
+        skill_progress.style = `margin-left: ${habilidad_arreglo[i].estado-2}%`;
+
+        let estado = document.createElement('div');
+        estado.classList.add('estado');
+
+        let barra_estado = document.createElement('div');
+        barra_estado.classList.add('barra-estado');
+        barra_estado.style = `width: ${habilidad_arreglo[i].estado}%`;
+
+        item_text.appendChild(skill_name);
+        item_text.appendChild(skill_progress);
+        item.appendChild(item_text);
+        estado.appendChild(barra_estado);
+        item.appendChild(estado);
+        lista_habilidades.appendChild(item);
+    }
+}
+
+    fetch('habilidades.json')
+    .then(response => response.json())
+    .then(info => escribir(info))

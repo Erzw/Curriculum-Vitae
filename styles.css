@@ -120,3 +120,27 @@ p{
 .article {
     padding: 8rem;
 }
+
+/*Skill*/
+.estado {
+    margin: 0 200px;
+    background: #333;
+    border-radius: 13px;
+    height: 20px;
+    padding: 3px;
+}
+
+.barra-estado{
+    background: #76a2c9;
+    border-radius: 13px;
+    height: 20px;
+    width: 50%;
+    
+}
+
+.texto-item{
+    font-weight: bold;
+    margin: 0 200px;
+    display: flex;
+    text-align: center;
+}
